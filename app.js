@@ -57,20 +57,63 @@ $(document).ready(function(){
 	})
 
 
-	$('#jade1').click(function(){
-		ma.currentTime = 0;
-		ma.play();
-	})
+        $("#jade1").mousedown(function() {
+        var flag = false;
+        var stop;
 
-	$('#jade2').click(function(){
-		ja1.currentTime = 0;
-		ja1.play();
-	})
+        ma.currentTime = 0;
+		ma.play();	
+        stop = setTimeout(function() {
+            flag = true;
+           	ma.loop = true;
+        }, 500);
+        $("#jade1").mouseup(function() {
+            if (!flag) {
+                clearTimeout(stop);
+            }
+            ma.loop = false;
+            
+        });
+    });
 
-	$('#jade3').click(function(){
-		ja2.currentTime = 0;
-		ja2.play();
-	})
+	$("#jade2").mousedown(function() {
+        var flag = false;
+        var stop;
+
+        ja1.currentTime = 0;
+		ja1.play();	
+        stop = setTimeout(function() {
+            flag = true;
+           	ja1.loop = true;
+        }, 500);
+        $("#jade2").mouseup(function() {
+            if (!flag) {
+                clearTimeout(stop);
+            }
+            ja1.loop = false;
+            
+        });
+    });
+
+
+    $("#jade3").mousedown(function() {
+        var flag = false;
+        var stop;
+
+        ja2.currentTime = 0;
+		ja2.play();	
+        stop = setTimeout(function() {
+            flag = true;
+           	ja2.loop = true;
+        }, 500);
+        $("#jade3").mouseup(function() {
+            if (!flag) {
+                clearTimeout(stop);
+            }
+            ja2.loop = false;
+            
+        });
+    });
 
 
 
