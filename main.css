@@ -1,0 +1,50 @@
+html{
+	height: 100%;
+}
+
+
+body{
+	  position: relative;
+	  height: 100%;
+	  background-color: rgb(36, 34, 23);
+}
+
+
+h1{
+	  position: absolute;
+	  font-family: 'Amatic SC', cursive;
+	  left: 4%;
+	  top: 10%;
+	  font-size: 400px;
+	  margin: 0;
+	  color: white;
+	  letter-spacing: 0.05em;
+	  cursor: pointer;
+}
+
+h2{
+	position: absolute;
+	font-family: 'Amatic SC', cursive;
+	right: 10px;
+	bottom: 10px;
+	font-size: 30px;
+	margin: 0;
+	color: white;
+    letter-spacing: 0.05em;
+	cursor: default;
+	display: none;
+}
+
+.jade img{
+	 position: absolute;
+	 width: 10%;
+	 left: -200;
+	 top: 20%;
+	 display: none;
+	 cursor: pointer;
+	 
+}
+
+a{
+	color: white;
+}
