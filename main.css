@@ -45,6 +45,23 @@ h2{
 	 
 }
 
+.jade img:hover{
+	 position: absolute;
+	 width: 11%;
+	 cursor: pointer;
+	 transition: all 0.4s;
+ 
+}
+
+.jade img:active{
+	 position: absolute;
+	 width: 11.5%;
+	 cursor: pointer;
+	 transition: all 0.4s;
+ 
+}
+
+
 a{
 	color: white;
 }
